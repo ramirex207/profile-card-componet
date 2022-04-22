@@ -3,10 +3,8 @@
     --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --Dark-grayish-blue: hsl(227, 10%, 46%);
     --Dark-gray: hsl(0, 0%, 59%);
-
     --Name-stats-Font-size: 18px;
 }
-
 html,
 body {
     margin: 0;
@@ -18,14 +16,12 @@ body {
 body{
     background: var(--Dark-cyan);
     height: 100vh;
-    background-image: url("../images/bg-pattern-bottom.svg");
+    background-image: url("../images/bg-pattern-bottom.svg"),url('../images/bg-pattern-top.svg');
     background-position: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
-
 .profile-card {
     border-radius: 8px;
     width: 85%;
@@ -53,7 +49,7 @@ body{
     align-items: flex-end;
     justify-content: center;
 }
-profile-card-bottom__datos-profile > div span:nth-child(1){
+.profile-card-bottom__datos-profile > div span:nth-child(1){
     font-size: var(--Name-stats-Font-size);
     font-weight: 700;
     margin-right: 8px;
